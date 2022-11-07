@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+        //clone
+        const student1={
+            cls:"12",
+            section:"A"
+        }
+        const student2={
+            ...student1
+        }
+        //copy
+        let student3={name:"ram"};
+        let student4=student3;
+        //comparing
+        const student5={name:"ramkumar",avgmark:"97"};
+        const student6={name:"ramya",avgmark:"97"}
+        alert(student5==student6);
+        console.log(typeof parseInt(student2));    
+        document.getElementById("demo").innerHTML =student2.cls;
+        document.getElementById("demo1").innerHTML =student4.name;
+        </script>
+    </body>
+</html>
